@@ -89,3 +89,8 @@ body {
     transform: translateX(-50%);
     color: #fff;
 }
+
+.arrow::before {
+    content: '\1F817';
+    font-size: 50px;
+}
