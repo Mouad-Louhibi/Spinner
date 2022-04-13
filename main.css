@@ -12,3 +12,14 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 15px solid #dde;
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
+}
