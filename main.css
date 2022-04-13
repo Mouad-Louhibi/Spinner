@@ -81,3 +81,11 @@ body {
     background-color: #f44336;
     transform: rotate(315deg);
 }
+
+.arrow {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
