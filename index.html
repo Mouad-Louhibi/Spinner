@@ -6,12 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="main.js"></script>
     <title>Spin Wheel</title>
 </head>
 
 <body>
-    <button id="spin" onclick="click()">Spin</button>
+    <button id="spin" onclick="
+    
+        let container = document.querySelector('.container');
+        let btn = document.getElementById('spin');
+        let number = Math.ceil(Math.random() * 1000);
+
+        btn.onclick =  function () {
+            container.style.transform = 'rotate(' + number + 'deg)';
+            number += Math.ceil(Math.random() * 1000);
+        }
+
+    ">Spin</button>
     <span class="arrow"></span>
     <div class="container">
         <div class="one">1</div>
